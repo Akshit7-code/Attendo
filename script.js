@@ -143,6 +143,6 @@ document.getElementById("searchBar").addEventListener("input", function () {
 
     students.forEach(student => {
         const name = student.innerText.toLowerCase();
-        student.style.display = name.includes(query) ? "block" : "none";
+        student.style.display = name.includes(query) ? "flex" : "none";
     });
 });
