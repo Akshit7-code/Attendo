@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance to Text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Attendance to Text</h1>
+            <p class="subtitle">Convert attendance into shareable text</p>
+        </header>
+
+        <main id="main">
+            <div class="input-section">
+                <textarea id="nameInput" placeholder="Enter student names (one per line)..."></textarea>
+                <div class="button-container">
+                    <button id="createList" class="primary-button">
+                        <span>Create List</span>
+                        <span>→</span>
+                    </button>
+                </div>
+            </div>
+
+           <div id="studentList" class="student-list">
+                <div class="list-header">
+                    <h2>Student List</h2>
+                </div>
+                <input type="text" id="searchBar" class="search-input" placeholder="Search student...">
+                <div id="studentCheckboxes" class="checkbox-container"></div>
+                <button id="generateText" class="primary-button">
+                    <span>Generate Text</span>
+                    <span>→</span>
+                </button>
+            </div>
+
+            <!-- <div id="outputSection" class="output-section hidden">
+                <div class="output-header">
+                    <h2>Generated Text</h2>
+                    <button id="copyText" class="secondary-button">
+                        <span>📋</span>
+                        <span>Copy Text</span>
+                    </button>
+                </div>
+                <div id="outputText" class="output-text"></div>
+            </div>  -->
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
